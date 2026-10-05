@@ -1,0 +1,3 @@
+/home/jackpot/projects/c++_projects/build/CMakeFiles/GalaxyCameraTest.dir
+/home/jackpot/projects/c++_projects/build/CMakeFiles/edit_cache.dir
+/home/jackpot/projects/c++_projects/build/CMakeFiles/rebuild_cache.dir

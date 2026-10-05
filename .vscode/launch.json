@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++: g++ 生成和调试活动文件",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}", // 指向tasks.json生成的可执行文件
+            "args": [],
+            "stopAtEntry": false, // 设为true则程序启动后会停在main函数第一行
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false, // 设为false则在VSCode内置终端显示
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++ 生成活动文件", // 必须与tasks.json里的label完全一致！
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
